@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+input {
+  border: none;
+  outline: none;
+}
+button {
+  outline: none;
+  border: 1px solid #ccc;
+  background: #eeeeee;
+  padding: 0;
+}
+
+
+
+.flex{
+  display: flex;
+}
+.flex_col{
+  flex-direction: column;
+}
+.flex_al_center{
+  align-items: center;
+}
+.flex_al_left{
+  align-items: left;
+}
+.flex_ju_aroud{
+  justify-content: space-around;
+}
+.flex_1{
+  flex:1;
+}
+.center{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translatex(-50%) translateY(-50%);
+}
+
+.fontSize_10{
+  font-size: 10px;
+}
+.fontSize_13{
+  font-size: 13px;
+}
+.fontSize_12{
+  font-size: 12px;
+}
+
+.btn{
+  display: inline-block;
+  background: #fff!important;
+  color: #000;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  cursor: default;
+}
+.btn:hover{
+  background: #4DD52B!important;
+  color: #fff;
+  }
+/* 去其他网页的链接 */
+  a.linkTo{
+  font-size: 12px;
+color: #333;
+cursor: pointer;
+letter-spacing: 2px;
+  }
+  a.linkTo:hover{
+    color: #4DD52B;
+    text-decoration: none;
+    
+  }

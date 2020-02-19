@@ -1,28 +1,30 @@
 <template>
-  <div class="avatar">
-    <img :src='asrc' alt="">
+  <div class="avatar" :style='{height:size,width:size}'>
+    <img :src="imgSrc" :style='{height:size,width:size}' alt />
+    <slot></slot>
   </div>
 </template>
 
 <script>
+import { mapState } from "vuex";
 export default {
-  data() {
-    return {
-      asrc: require('../assets/avatar.jpg') //此处注意: 将assets里的资源视为模块,必须用require引入
+  props:{
+    imgSrc:String,
+    size:{
+      default: '40px',
+      type:String
     }
   },
-  methods: {
 
+  data() {
+    return {
+     
+    };
   },
-}
+
+};
 </script>
 
 <style scoped lang="less">
-.avatar{
-  img{
-    height: 35px;
-    width:35px;
-  }
-}
 
 </style>
